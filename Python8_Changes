@@ -1,0 +1,42 @@
+What is new in Python8
+New Features
+1.Walrus operator
+Ans: It is an assignment operator ".=" that is used to assign values to a variable as a larger part of the expression
+2.Positional-only-parameters:
+Ans: A/B, There is a new function parameter syntax "/",it is used to indicate that some parameters can be used positionally and  cannot be used as a keyword.
+3. Parallel Filesystem cache:
+Ans: There is a new PYTHONCACHEPREFIX setting in python 3.8, it configures the implicit bytecode cache to use a separate parallel filesystem tree.
+4.Debug Build:
+Ans: With python3.8 , the same ABI is used whether it is built in debug mode or in release mode. when python used UNIX in debug mode, it is now possible to load C extensions that are built in release mode and the extensions build using the stable ABI.
+5.f-Strings Support
+Ans: Python 3.8 has added 1= specifier for f-strings.
+6.Run-Time Audit Hook
+Ans: Audit Hook: An audit hook in an application is an exit point that allows the auditor to add the modules subsequently.
+Verified Open Hook: The verified open hook allows python embedders to integrate with operating system support when launching script or importing python code.
+7. Initialization configuration:  
+Ans: Python 3.8 adds new C API to configure the initialization for finer control and better error reporting the following new structures are added.
+a.PyConfig
+b.PyPreConfig
+c.PyStatus
+d.PyWideStringList
+
+8.Vectorcall:
+Ans: It is fast calling protocol for CPython, it is added to the Python/C . it is basically meant to formalize the existing optimizations that were already made for various classed.
+
+9.Pickle Protocol 5:
+Ans: a. It covers the extra metadata needed for out-of banc=d data buffers
+b. pickle 5 has a new pick Buffer type for __redce_ex__ implementations to return out-of-bad data buffers. It has a new buffer_callback parameter when picking to handle out-of-band data buffers\
+c. It also has a new buffers parameter when unpicking to provide out-of-band data buffers.
+
+New Modules:
+
+1.importlib.metadata
+Ans: There has been an addition of a new module in python 3.8, the new importlib.metadata module provides provisional support for reading metadata from third party packages.
+
+Other language changes
+1. Syntax warnings
+2. Reversible Dictionaries
+EX: A:10,B:20 Reversed() B:20,A:10
+3. Multiprocessing shared memory
+4. Typing module improvements 
+5. Date and Date wise calendar
